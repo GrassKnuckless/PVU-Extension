@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "PvU Extension",
+    "description": "Кликает на Use, когда открыть ссылку с чужим растением.",
+    "version": "1.0",
+    "browser_action": {
+        "default_icon": "pvu.png",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://marketplace.plantvsundead.com/*"],
+            "js": ["myscript.js"]
+        }
+    ],
+    "icons": { 
+        "16": "pvu.png",
+        "48": "pvu.png",
+       "128": "pvu.png"
+    }
+}
