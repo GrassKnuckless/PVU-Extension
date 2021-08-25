@@ -15,4 +15,4 @@ let useInterval =  setInterval(() => {
             clearInterval(useInterval)
         }
     } catch (err) {}
-}, 100)
+}, 1000)
